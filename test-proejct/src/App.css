@@ -1,38 +1,77 @@
+* {
+  font-family: 'Inter';
+}
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header-container {
+  position: sticky;
+  height: 80px;
+  box-shadow: 0px 8px 8px rgba(0,0,0,0.1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo{
+  width: 55px;
+  height: 30px;
+  position: absolute;
+  left: 5.94%;
+  right: 89.77%;
+  top: 31.25%;
+  bottom: 31.25%;
+}
+.shopping_name{
+  display: flex;
+  align-items: center;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 88%;
+  position: absolute;
+  left: 11.17%;
+  right: 70.86%;
+  top:31.48%;
+  bottom: 31.48%;
+  color: #000000;
+}
+.hamburger_menu {
+  position: absolute;
+  left: 88.88%;
+  top: 28.33%;
+  bottom: 8.33%;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.dropdown {
+  position: relative;
+  right:50% ;
+  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.1));
+}
+
+.menus {
+  width: 200px;
+  height: 172px;
   display: flex;
   flex-direction: column;
+  font-size: large;
+  background: #FFFFFF;
+  border-radius: 12px;
+}
+
+.menu {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 33%;
+  text-decoration : none;
+  color: #000000;
+  padding: 8px 13px;
+
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu:nth-child(2) {
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
+  border-top: 0.5px solid rgba(0, 0, 0, 0.1);
 }
