@@ -1,11 +1,13 @@
 import React from 'react';
 import Header from '../components/Header'
+import Footer from '../components/Footer';
 
 export default function Main() {
     return (
         <div>
             <Header/>
-            메인페이지입니다.
+            <div className='main'>메인 페이지 입니다</div>
+            <Footer/>
         </div>
     );
 }
