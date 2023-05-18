@@ -9,12 +9,13 @@
   position: sticky;
   height: 80px;
   box-shadow: 0px 8px 8px rgba(0,0,0,0.1);
+  z-index: 3;
 }
 
 .logo{
   width: 55px;
   height: 30px;
-  position: absolute;
+  position: relative;
   left: 5.94%;
   right: 89.77%;
   top: 31.25%;
@@ -55,7 +56,7 @@
   height: 172px;
   display: flex;
   flex-direction: column;
-  font-size: large;
+  font-size: medium;
   background: #FFFFFF;
   border-radius: 12px;
 }
@@ -68,6 +69,7 @@
   text-decoration : none;
   color: #000000;
   padding: 8px 13px;
+  cursor: pointer;
 
 }
 
@@ -89,7 +91,159 @@
 .footer > div {
   font-size: 12px;
 }
-
 .main {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: calc(100vh - 142px);
+}
+
+.product-list {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding: 0;
+  width: 100%;
+}
+.product_img{
+  width: 260px;
+  height: 220px;
+  border-radius: 15px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.main_container{
+  display: flex;
+  width:1128px;
+  height: 840px;
+  flex-direction: column;
+}
+.sub_container{
+  height: 420px;
+}
+
+.main_title{
+  font-size: 24px;
+  font-weight: 700;
+  font-family: 'Inter';
+}
+
+.product-box{
+  display: flex;
+  justify-content: space-between;
+  height: 52px;
+}
+
+.discount-percentage {
+  font-size: 16px;
+  color: #452CDD;
+  font-weight: 800;
+}
+
+.price {
+  font-size: 16px;
+  text-align: right;
+}
+
+.sub_title {
+  font-size: 16px;
+}
+
+.brand-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.follower{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-top: 4px;
+  font-size: 16px;
+}
+
+.follower_title{
+  font-weight: 800;
+  margin-bottom: 0;
+}
+
+.follower_num{
+  margin: 3px;
+}
+
+.product {
+  position: relative;
+}
+.star {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 3%;
+  bottom: 28%;
+  color: rgba(223, 223, 223, 0.85);
+  cursor: pointer;
+}
+
+.active {
+  color:rgb(252, 222, 22);
+  /* 북마크에 추가되었습니다 애니메이션 구현 */
+}
+
+.modal_star {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left:26.33%;
+  bottom: 20.99%;
+  color: rgba(223, 223, 223, 0.85);
+}
+
+.modal_title {
+  width: 650px;
+  height: 30px;
+  position: absolute;
+  left:29%;
+  font-family: 'Inter', sans-serif;
+  bottom: 21.11%;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffffdf;
+  text-shadow: 0px 0px 4px 0px #0000001A;
+}
+
+.modal-background {
+  height: 100%;
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left:0;
+  top:0;
+  text-align: center;
+  background-color: rgba(76, 76, 76, 0.1);
+}
+
+.modal-img {
+  height: 470px;
+  width: 700px;
+  position: absolute;
+  top:20%;
+  left: 25%;
+  overflow: scroll;
+  border-radius: 10px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+      linear-gradient(0deg, #D9D9D9, #D9D9D9);
+}
+
+.closebtn {
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  right: 26.88%;
+  bottom: 75.47%;
+  background: #f8f8f800;
+  color: #FFFFFF;
+  cursor: pointer;
 }
